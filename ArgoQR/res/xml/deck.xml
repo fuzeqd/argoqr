@@ -1,0 +1,1158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!--
+	Arcomage Tribute Deck File	
+		
+	Deck Name: 	Default Deck 
+	Description:	The default card deck as given in  Arcomage (M&M8)
+	Notes:		Original Cards (C) 2000 3DO, NWC. (C) Ubi Soft
+ 
+-->
+
+<Deck>	
+
+	<!-- Red Cards -->
+
+	<Card id="qa1card">
+		<Name value="Нехватка камня" />
+		<Type value="0" />
+		<Picture value="1.png" />
+		<Requirements value="0" />
+		<PlayerChanges beasts="0" bricks="-8" gems="0" tower="0" wall="0" />
+		<EnemyChanges beasts="0" bricks="-8" gems="0" tower="0" wall="0" />
+		<Description value="Все Игроки теряют 8 кирпичей
+" />	
+	</Card>
+
+	<Card id="qa2card">
+		<Name value="Тайник" />
+		<Type value="0" />
+		<Picture value="2.png" />
+		<Requirements value="0" />
+		<AdditionalTurn value="1" />
+		<PlayerChanges bricks="2" gems="2"/>
+		<Description value="Кирпичи +2 \nДрагоценности +2\nЕщё ход
+" />	
+	</Card>
+	
+	<Card id="qa3card">
+		<Name value="Местность " />
+		<Type value="0" /> 
+		<Picture value="3.png" />
+		<Requirements value="1" />
+		<AdditionalTurn value="1" /> 
+		<PlayerChanges wall="1"/>
+		<Description value="Стена +1\nЕщё ход
+" /> 
+	</Card>
+	
+ 	<Card id="qa4card">
+		<Name value="Горняки " />
+		<Type value="0" />
+		<Picture value="4.png" />
+		<Requirements value="3" /> 
+		<PlayerMod beasts="0" bricks="1" gems="0" />
+		<Description value="Шахты +1
+" /> 
+	</Card>
+	
+ 	<Card id="qa5card">
+		<Name value=" Залежи " />
+		<Type value="0" />
+		<Picture value="5.png" />
+		<Requirements value="4" /> 
+		<Script value="1" />
+		<Description value="Если Шахт меньше чем у врагa\nШахты +2\nиначе Шахты +1
+" /> 
+	</Card>
+
+ 	<Card id="qa6card">
+		<Name value="Гномы " />
+		<Type value="0" />
+		<Picture value="6.png" />
+		<Requirements value="7" />
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="4"/>
+		<PlayerMod beasts="0" bricks="1" gems="0" /> 
+		<Description value="Стена +4\nШахты +1
+" /> 
+	</Card>
+
+ 	<Card id="qa7card">
+		<Name value="Сверхурочные " />
+		<Type value="0" />
+		<Picture value="7.png" />
+		<Requirements value="2" />
+		<PlayerChanges beasts="0" bricks="0" gems="-6" tower="0" wall="5"/>
+		<Description value="Стена +5\nДрагоценности -6
+" /> 
+	</Card>
+
+ 	<Card id="qa8card">
+		<Name value="Похищенные знания " />
+		<Type value="0" />
+		<Picture value="8.png" />
+		<Requirements value="5" />
+		<Script value="2" />
+		<Description value="Если Шахт меньше вражьего то Шахты равны вражьим Шахтам
+" /> 
+	</Card>
+
+ 	<Card id="qa9card">
+		<Name value="Стена " />
+		<Type value="0" />
+		<Picture value="9.png" />
+		<Requirements value="2" />
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="3"/>
+		<Description value="Стена +3
+" /> 
+	</Card>
+
+ 	<Card id="qa10card">
+		<Name value="Твёрдая Стена " />
+		<Type value="0" />
+		<Picture value="10.png" />
+		<Requirements value="3" />
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="4"/>
+		<Description value="Стена +4
+" /> 
+	</Card>
+
+ 	<Card id="qa11card">
+		<Name value="Изобретение " />
+		<Type value="0" />
+		<Picture value="11.png" />
+		<Requirements value="2" />
+		<PlayerChanges beasts="0" bricks="0" gems="4" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="4" tower="0" wall="0"/>
+		<PlayerMod beasts="0" bricks="1" gems="0" /> 
+		<EnemyMod beasts="0" bricks="1" gems="0" /> 
+		<Description value="каждому игроку:\nДрагоценности +4\nШахты +1
+" /> 
+	</Card>
+
+  	<Card id="qa12card">
+		<Name value="Фундамент " />
+		<Type value="0" />
+		<Picture value="12.png" />
+		<Requirements value="2" />
+		<Script value="3" />
+		<Description value="если Стена = 0\nСтена +6
+иначе Стена +3
+" /> 
+	</Card>
+
+  	<Card id="qa13card">
+		<Name value="Tremble " />
+		<Type value="0" />
+		<Picture value="13.png" />
+		<Requirements value="7" />
+		<AdditionalTurn value="1"/>
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="-6"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="-6"/>
+		<Description value="Обе Стены получат 6 урона
+\nещё ход
+" /> 
+	</Card>
+
+  	<Card id="qa14card">
+		<Name value="Секретная комната " />
+		<Type value="0" />
+		<Picture value="14.png" />
+		<Requirements value="8" />
+		<AdditionalTurn value="1"/>
+		<PlayerMod beasts="0" bricks="0" gems="1" /> 
+		<Description value="Магия +1
+\nещё ход
+" /> 
+	</Card>
+
+  	<Card id="qa15card">
+		<Name value="Землетрясение " />
+		<Type value="0" />
+		<Picture value="15.png" />
+		<Requirements value="0" />
+		<PlayerMod beasts="0" bricks="-1" gems="0" /> 
+		<EnemyMod beasts="0" bricks="-1" gems="0" /> 
+		<Description value="Все  Шахты -1
+" /> 
+	</Card>
+
+  	<Card id="qa16card">
+		<Name value="Большая Стена " />
+		<Type value="0" />
+		<Picture value="16.png" />
+		<Requirements value="5" />
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="6"/>
+		<Description value="Стена +6
+" /> 
+	</Card>
+
+  	<Card id="qa17card">
+		<Name value="Обвал! " />
+		<Type value="0" />
+		<Picture value="17.png" />
+		<Requirements value="4" />
+		<EnemyMod beasts="0" bricks="-1" gems="0" /> 
+		<Description value=" Шахты врага  -1
+" /> 
+	</Card>
+
+  	<Card id="qa18card">
+		<Name value="Новые инструменты " />
+		<Type value="0" />
+		<Picture value="18.png" />
+		<Requirements value="6" />
+		<PlayerMod beasts="0" bricks="2" gems="0" /> 
+		<Description value="Шахты +2
+" /> 
+	</Card>
+
+  	<Card id="qa19card">
+		<Name value="Демонтаж " />
+		<Type value="0" />
+		<Picture value="19.png" />
+		<Requirements value="0" />
+		<PlayerMod beasts="0" bricks="-1" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="5" tower="0" wall="10"/>
+		<Description value="Шахты -1
+\nСтена +10
+\nДрагоценности +5
+" /> 
+	</Card>
+
+  	<Card id="qa20card">
+		<Name value="Укреплённая Стена " />
+		<Type value="0" />
+		<Picture value="20.png" />
+		<Requirements value="8" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="8"/>
+		<Description value="Стена +8
+" /> 
+	</Card>
+
+  	<Card id="qa21card">
+		<Name value="Решетка " />
+		<Type value="0" />
+		<Picture value="21.png" />
+		<Requirements value="9" />
+		<PlayerMod beasts="1" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="5"/>
+		<Description value="Стена +5
+\nЗоопарк +1
+" /> 
+	</Card>
+		<Card id="qa22card">
+		<Name value=" Кристаллический череп " />
+		<Type value="0" />
+		<Picture value="22.png" />
+		<Requirements value="9" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="7" tower="0" wall="7"/>
+		<Description value="Стена +7
+\nДрагоценности +7
+" /> 
+	</Card>
+	
+	<Card id="qa23card">
+		<Name value="Гармоническая Руда " />
+		<Type value="0" />
+		<Picture value="23.png" />
+		<Requirements value="11" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="3" wall="6"/>
+		<Description value="Стена +6
+\nБашня +3
+" /> 
+	</Card>
+	
+	<Card id="qa24card">
+		<Name value="Огромная Стена " />
+		<Type value="0" />
+		<Picture value="24.png" />
+		<Requirements value="13" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="12"/>
+		<Description value="Стена +12
+" /> 
+	</Card>
+	
+	<Card id="qa25card">
+		<Name value="Детальный проект " />
+		<Type value="0" />
+		<Picture value="25.png" />
+		<Requirements value="15" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="5" wall="8"/>
+		<Description value="Стена +8
+\nБашня +5
+" /> 
+	</Card>	
+		
+	<Card id="qa26card">
+		<Name value="Зубчатая стена " />
+		<Type value="0" />
+		<Picture value="26.png" />
+		<Requirements value="16" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="15"/>
+		<Description value="Стена +15
+" /> 
+	</Card>	
+
+	<Card id="qa27card">
+		<Name value="Рогатка " />
+		<Type value="0" />
+		<Picture value="27.png" />
+		<Requirements value="18" />
+		<Damage enemy="10" own="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="6"/>
+		<Description value="Стена +6
+\nВраг получает 10 урона
+" /> 
+	</Card>	
+
+	<Card id="qa28card">
+		<Name value="Сердце дракона " />
+		<Type value="0" />
+		<Picture value="28.png" />
+		<Requirements value="24" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="8" wall="20"/>
+		<Description value="Стена +20
+\nБашня +8
+" /> 
+	</Card>
+
+	<Card id="qa29card">
+		<Name value="тяжелая работа " />
+		<Type value="0" />
+		<Picture value="29.png" />
+		<Requirements value="7" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="-5" bricks="0" gems="0" tower="0" wall="9"/>
+		<Description value="Стена +9
+\nЖивотные -5
+" /> 
+	</Card>
+
+	<!-- Blue Cards -->
+
+	<Card id="qa30card">
+		<Name value="Кварц " />
+		<Type value="1" />
+		<Picture value="30.png" />
+		<Requirements value="1" />
+		<AdditionalTurn value="1" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="1"/>
+		<Description value="Башня +1
+\nЕщё ход
+" /> 
+	</Card>		
+
+	<Card id="qa31card">
+		<Name value="топаз " />
+		<Type value="1" />
+		<Picture value="31.png" />
+		<Requirements value="2" />
+		<AdditionalTurn value="1" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="-1" wall="0"/>
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня врага -1
+\nЕщё ход
+" /> 
+	</Card>		
+
+	<Card id="qa32card">
+		<Name value="Аметист " />
+		<Type value="1" />
+		<Picture value="32.png" />
+		<Requirements value="2" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="3" wall="0"/>
+		<Description value="Башня +3
+" /> 
+	</Card>	
+
+	<Card id="qa33card">
+		<Name value="Волшебник " />
+		<Type value="1" />
+		<Picture value="33.png" />
+		<Requirements value="3" />
+		<PlayerMod beasts="0" bricks="0" gems="1" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Магия +1
+" /> 
+	</Card>	
+
+	<Card id="qa34card">
+		<Name value="Призма " />
+		<Type value="1" />
+		<Picture value="34.png" />
+		<Requirements value="3" />
+		<DiscardCard value="1" />
+		<AdditionalTurn value="1" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Выбросить карту
+\nещё ход
+" /> 
+	</Card>	
+
+	<Card id="qa35card">
+		<Name value="Магнит " />
+		<Type value="1" />
+		<Picture value="35.png" />
+		<Requirements value="5" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="2" wall="0"/>
+		<Description value="Башня +2
+\nНельзя выбросить эту карту
+" /> 
+	</Card>	
+
+	<Card id="qa36card">
+		<Name value="Солнечный свет " />
+		<Type value="1" />
+		<Picture value="36.png" />
+		<Requirements value="4" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="2" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="-2" wall="0"/>
+		<Description value="Башня +2
+\nБашня врага -2
+" /> 
+	</Card>	
+
+	<Card id="qa37card">
+		<Name value="Матрица " />
+		<Type value="1" />
+		<Picture value="37.png" />
+		<Requirements value="6" />
+		<PlayerMod beasts="0" bricks="0" gems="1" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="3" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="1" wall="0"/>
+		<Description value="Магия +1
+\nБашня +3
+\nБашня врага +1
+" /> 
+	</Card>	
+	
+	<Card id="qa38card">
+		<Name value="Брак камня " />
+		<Type value="1" />
+		<Picture value="38.png" />
+		<Requirements value="2" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="-3" wall="0"/>
+		<Description value="Башня врага-3
+" /> 
+	</Card>	
+	
+	<Card id="qa39card">
+		<Name value="Рубин " />
+		<Type value="1" />
+		<Picture value="39.png" />
+		<Requirements value="3" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="5" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +5
+" /> 
+	</Card>		
+	
+	<Card id="qa40card">
+		<Name value="Копье " />
+		<Type value="1" />
+		<Picture value="40.png" />
+		<Requirements value="4" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="-5" wall="0"/>
+		<Description value="Башня врага -5
+" /> 
+	</Card>			
+	
+	<Card id="qa41card">
+		<Name value="Жажда власти " />
+		<Type value="1" />
+		<Picture value="41.png" />
+		<Requirements value="3" />
+		<PlayerMod beasts="0" bricks="0" gems="2" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="-5" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня -5
+\nМагия +2
+" /> 
+	</Card>				
+	
+	<Card id="qa42card">
+		<Name value="Колебания " />
+		<Type value="1" />
+		<Picture value="42.png" />
+		<Requirements value="7" />
+		<PlayerMod beasts="0" bricks="0" gems="1" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="3" wall="3"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Магия +1
+\nБашня +3
+\nСтена +3
+" /> 
+	</Card>				
+	
+	<Card id="qa43card">
+		<Name value="Баланс " />
+		<Type value="1" />
+		<Picture value="43.png" />
+		<Requirements value="7" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Script value="4" />
+		<Description value="Магия всех одинакова
+" /> 
+	</Card>				
+	
+	<Card id="qa44card">
+		<Name value="Изумруд " />
+		<Type value="1" />
+		<Picture value="44.png" />
+		<Requirements value="6" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="8" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +8
+" /> 
+	</Card>				
+	
+	<Card id="qa45card">
+		<Name value="Жемчуг Мудрости " />
+		<Type value="1" />
+		<Picture value="45.png" />
+		<Requirements value="9" />
+		<PlayerMod beasts="0" bricks="0" gems="1" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="5" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +5
+\nМагия +1
+" /> 
+	</Card>	
+	
+	<Card id="qa46card">
+		<Name value="Давка " />
+		<Type value="1" />
+		<Picture value="46.png" />
+		<Requirements value="8" />
+		<PlayerMod beasts="0" bricks="0" gems="-1" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="-9" wall="0"/>
+		<Description value="Магия -1
+\nВражеская башня -9.
+" /> 
+	</Card>	
+	
+	<Card id="qa47card">
+		<Name value="Распад " />
+		<Type value="1" />
+		<Picture value="47.png" />
+		<Requirements value="7" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="5" wall="0"/>
+		<EnemyChanges beasts="0" bricks="-6" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +5
+\nВраг теряет 6 кирпичей.
+" /> 
+	</Card>	
+	
+	<Card id="qa48card">
+		<Name value="Сапфир " />
+		<Type value="1" />
+		<Picture value="48.png" />
+		<Requirements value="10" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="11" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +11
+" /> 
+	</Card>		
+	
+	<Card id="qa49card">
+		<Name value="Вред " />
+		<Type value="1" />
+		<Picture value="49.png" />
+		<Requirements value="5" />
+		<PlayerMod beasts="0" bricks="0" gems="-1" /> 
+		<EnemyMod beasts="0" bricks="0" gems="-1" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="-7" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="-7" wall="0"/>
+		<Description value="каждой башне 7 урона
+\nМагия всем -1
+" /> 
+	</Card>			
+	
+	<Card id="qa50card">
+		<Name value="Рубин Огня " />
+		<Type value="1" />
+		<Picture value="50.png" />
+		<Requirements value="13" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="6" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="-4" wall="0"/>
+		<Description value="Башня +6
+\nВражеская башня 4 урона
+" /> 
+	</Card>			
+	
+	<Card id="qa51card">
+		<Name value="Помощь  " />
+		<Type value="1" />
+		<Picture value="51.png" />
+		<Requirements value="4" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="-10" gems="0" tower="7" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +7
+\nКирпичи -10
+" /> 
+	</Card>				
+	
+	<Card id="qa52card">
+		<Name value="Кристалл щит " />
+		<Type value="1" />
+		<Picture value="52.png" />
+		<Requirements value="12" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="8" wall="3"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +8
+\nСтена +3
+" /> 
+	</Card>	
+	
+	<Card id="qa53card">
+		<Name value="Сочувствие " />
+		<Type value="1" />
+		<Picture value="53.png" />
+		<Requirements value="14" />
+		<PlayerMod beasts="1" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="8" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +8
+\nЗоопарк +1
+" /> 
+	</Card>	
+	
+	<Card id="qa54card">
+		<Name value="Алмаз " />
+		<Type value="1" />
+		<Picture value="54.png" />
+		<Requirements value="16" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="15" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +15
+" /> 
+	</Card>	
+	
+	<Card id="qa55card">
+		<Name value="Святилище " />
+		<Type value="1" />
+		<Picture value="55.png" />
+		<Requirements value="15" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="5" bricks="0" gems="0" tower="10" wall="5"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +10
+\nСтена +5
+\nЖивотные +5
+" /> 
+	</Card>	
+	
+	<Card id="qa56card">
+		<Name value="Камень лавы " />
+		<Type value="1" />
+		<Picture value="56.png" />
+		<Requirements value="17" />
+		<Damage enemy="6" own="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="12" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +12
+\nВраг получает 6 урона.
+" /> 
+	</Card>	
+	
+	<Card id="qa57card">
+		<Name value="Глаз дракона " />
+		<Type value="1" />
+		<Picture value="57.png" />
+		<Requirements value="21" />
+		<Damage enemy="6" own="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="12" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +12
+\nВраг получает 6 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa58card">
+		<Name value="Кристаллизация " />
+		<Type value="1" />
+		<Picture value="58.png" />
+		<Requirements value="21" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="11" wall="-6"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +11
+\nСтена -6
+" /> 
+	</Card>	
+	
+	<Card id="qa59card">
+		<Name value="Бешеные коровы " />
+		<Type value="2" />
+		<Picture value="59.png" />
+		<Requirements value="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="-6" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="-6" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Все игроки теряют 6 существ
+" /> 
+	</Card>	
+	
+	<Card id="qa60card">
+		<Name value="Фея " />
+		<Type value="2" />
+		<Picture value="60.png" />
+		<Requirements value="1" />
+		<Damage enemy="6" self="0" />
+		<AdditionalTurn value="1" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Враг получает 6 урона
+\nещё ход
+" /> 
+	</Card>	
+		
+	<Card id="qa61card">
+		<Name value="Дурные гоблины " />
+		<Type value="2" />
+		<Picture value="61.png" />
+		<Requirements value="1" />
+		<Damage enemy="4" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="-3" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Драгоценности -3
+\nВраг получает 4 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa62card">
+		<Name value="Агрономия " />
+		<Type value="2" />
+		<Picture value="62.png" />
+		<Requirements value="3" />
+		<Damage enemy="0" self="0" />
+		<PlayerMod beasts="1" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Зоопарк +1
+" /> 
+	</Card>	
+	
+	<Card id="qa63card">
+		<Name value="Бойскаут Эльвен " />
+		<Type value="2" />
+		<Picture value="63.png" />
+		<Requirements value="2" />
+		<Damage enemy="0" self="0" />
+		<DiscardCard value="1" />
+		<AdditionalTurn value="1" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Сбрось карту
+\nещё ход
+" /> 
+	</Card>	
+	
+	<Card id="qa64card">
+		<Name value="Бунт гоблинов " />
+		<Type value="2" />
+		<Picture value="64.png" />
+		<Requirements value="3" />
+		<Damage enemy="6" self="3" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Себе 3 урон
+\nВраг получает 6 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa65card">
+		<Name value="Стрельцы гоблины " />
+		<Type value="2" />
+		<Picture value="65.png" />
+		<Requirements value="4" />
+		<Damage enemy="0" self="1" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="-3" wall="0"/>
+		<Description value="себе 1 урон
+\nВражеская башня 3 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa66card">
+		<Name value="Теневая фея " />
+		<Type value="2" />
+		<Picture value="66.png" />
+		<Requirements value="6" />
+		<Damage enemy="0" self="0" />
+		<AdditionalTurn value="1" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="-2" wall="0"/>
+		<Description value="Вражеская башня -2
+\nещё ход
+" /> 
+	</Card>	
+	
+	<Card id="qa67card">
+		<Name value="Орк " />
+		<Type value="2" />
+		<Picture value="67.png" />
+		<Requirements value="3" />
+		<Damage enemy="5" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Враг получает 5 урона
+" /> 
+	</Card>	
+
+	<Card id="qa68card">
+		<Name value="Карлики " />
+		<Type value="2" />
+		<Picture value="68.png" />
+		<Requirements value="5" />
+		<Damage enemy="4" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="3"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Стена +3
+\nВраг получает 4 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa69card">
+		<Name value="Змеи " />
+		<Type value="2" />
+		<Picture value="69.png" />
+		<Requirements value="6" />
+		<Damage enemy="0" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="-4" wall="0"/>
+		<Description value="Вражеская башня -4
+" /> 
+	</Card>	
+
+	<Card id="qa70card">
+		<Name value=" Хранитель Тролль " />
+		<Type value="2" />
+		<Picture value="70.png" />
+		<Requirements value="7" />
+		<Damage enemy="0" self="0" />
+		<PlayerMod beasts="2" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Зоопарк +2
+" /> 
+	</Card>
+	
+	<Card id="qa71card">
+		<Name value="Гремлин " />
+		<Type value="2" />
+		<Picture value="71.png" />
+		<Requirements value="8" />
+		<Damage enemy="2" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="2" wall="4"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Башня +2
+\nСтена +4
+\nВраг получает 2 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa72card">
+		<Name value="Полная Луна " />
+		<Type value="2" />
+		<Picture value="72.png" />
+		<Requirements value="0" />
+		<Damage enemy="0" self="0" />
+		<PlayerMod beasts="1" bricks="0" gems="0" /> 
+		<EnemyMod beasts="1" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="3" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="3" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Существа +3
+\n+1 все зоопарки
+" /> 
+	</Card>	
+	
+	<Card id="qa73card">
+		<Name value="Нож " />
+		<Type value="2" />
+		<Picture value="73.png" />
+		<Requirements value="5" />
+		<Damage enemy="6" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Враг получает 6 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa74card">
+		<Name value="Огр " />
+		<Type value="2" />
+		<Picture value="74.png" />
+		<Requirements value="6" />
+		<Damage enemy="7" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Враг получает 7 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa75card">
+		<Name value="Бешеные овцы " />
+		<Type value="2" />
+		<Picture value="75.png" />
+		<Requirements value="6" />
+		<Damage enemy="6" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="-3" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Враг получает 6 урона
+\nСущества врага -3 
+" /> 
+	</Card>	
+	
+	<Card id="qa76card">
+		<Name value="Хобогоблин " />
+		<Type value="2" />
+		<Picture value="76.png" />
+		<Requirements value="5" />
+		<Damage enemy="6" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="-5" bricks="-5" gems="-5" tower="0" wall="0"/>
+		<EnemyChanges beasts="-5" bricks="-5" gems="-5" tower="0" wall="0"/>
+		<Description value="Враг получает 6 урона\nКирпичи,Существа,Драгоценности всем -5
+" /> 
+	</Card>	
+	
+	<Card id="qa77card">
+		<Name value="Огненный жук " />
+		<Type value="2" />
+		<Picture value="77.png" />
+		<Requirements value="8" />
+		<Damage enemy="0" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Script value="5" />
+		<Description value="если стена врага = 0 враг получает 10 урона, иначе 6 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa78card">
+		<Name value="Оборотень " />
+		<Type value="2" />
+		<Picture value="78.png" />
+		<Requirements value="9" />
+		<Damage enemy="9" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Враг получает 9 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa79card">
+		<Name value="Кислотное облако " />
+		<Type value="2" />
+		<Picture value="79.png" />
+		<Requirements value="11" />
+		<Damage enemy="0" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Script value="6" />
+		<Description value="если стена врага > 0,враг получает 10 урона,иначе 7 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa80card">
+		<Name value="Единорог " />
+		<Type value="2" />
+		<Picture value="80.png" />
+		<Requirements value="9" />
+		<Damage enemy="0" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Script value="7" />
+		<Description value="если Магия больше Магии врага враг получает 12 урона иначе 7 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa81card">
+		<Name value="Стрельцы Эльвен " />
+		<Type value="2" />
+		<Picture value="81.png" />
+		<Requirements value="10" />
+		<Damage enemy="0" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Script value="8" />
+		<Description value="если стена больше стены врага башня врага -6, иначе враг получает 6 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa82card">
+		<Name value="Succubus " />
+		<Type value="2" />
+		<Picture value="82.png" />
+		<Requirements value="14" />
+		<Damage enemy="0" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="-8" bricks="0" gems="0" tower="-5" wall="0"/>
+		<Description value="башня врага -5
+\nСущества врага -8
+" /> 
+	</Card>	
+	
+	<Card id="qa83card">
+		<Name value="Камнепад " />
+		<Type value="2" />
+		<Picture value="83.png" />
+		<Requirements value="11" />
+		<Damage enemy="8" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="-1" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Враг получает 8 урона
+\nВражеский Шахты -1
+" /> 
+	</Card>	
+	
+	<Card id="qa84card">
+		<Name value="Вор	 " />
+		<Type value="2" />
+		<Picture value="84.png" />
+		<Requirements value="12" />
+		<Damage enemy="0" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="3" gems="5" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="-5" gems="-10" tower="0" wall="0"/>
+		<Description value="Драгоценности врага -10
+\nКирпичи врага -5
+\nДрагоценности +5
+\nКирпичи +3
+" /> 
+	</Card>	
+	
+	<Card id="qa85card">
+		<Name value="Каменный гигант " />
+		<Type value="2" />
+		<Picture value="85.png" />
+		<Requirements value="15" />
+		<Damage enemy="10" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="0" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="4"/>
+		<EnemyChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Стена +4
+\nВраг получает 10 урона
+" /> 
+	</Card>	
+	
+	<Card id="qa86card">
+		<Name value="Вампир " />
+		<Type value="2" />
+		<Picture value="86.png" />
+		<Requirements value="17" />
+		<Damage enemy="10" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="-1" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="-5" bricks="0" gems="0" tower="0" wall="0"/>
+		<Description value="Враг получает 10 урона
+\nЗоопарк врага -1
+\nВражеские существа -5
+" /> 
+	</Card>	
+
+	<Card id="qa87card">
+		<Name value="Дракон " />
+		<Type value="2" />
+		<Picture value="87.png" />
+		<Requirements value="25" />
+		<Damage enemy="20" self="0" />
+		<PlayerMod beasts="0" bricks="0" gems="0" /> 
+		<EnemyMod beasts="1" bricks="0" gems="0" /> 
+		<PlayerChanges beasts="0" bricks="0" gems="0" tower="0" wall="0"/>
+		<EnemyChanges beasts="0" bricks="0" gems="-10" tower="0" wall="0"/>
+		<Description value="Враг получает 20 урона
+\nЗоопарк врага +1
+\nДрагоценности врага -10
+" /> 
+	</Card>	
+</Deck>
