@@ -27,10 +27,12 @@
 
         </LinearLayout>
 <!--ниже ресурсы  -->
+
         <LinearLayout
             android:id="@+id/LinearLayout_res"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="2"
             android:gravity="fill_horizontal"
             android:orientation="horizontal" >
@@ -39,7 +41,7 @@
                 android:id="@+id/LinearLayout07"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
+                android:layout_weight="1"
                 android:gravity="bottom"
                 android:orientation="vertical" >
 
@@ -222,32 +224,26 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <FrameLayout
-                android:id="@+id/FrameLayout01"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2" >
-
-            </FrameLayout>
-
         <LinearLayout
             android:id="@+id/LinearLayoutres1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:gravity="bottom"
-            android:orientation="vertical"
-            android:layout_weight="0" > 
+            android:orientation="vertical" >
+ 
             <!-- player1 -->
 
                 <LinearLayout
                     android:id="@+id/LinearLayout_player1_brick"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:orientation="horizontal" >
 
                     <LinearLayout
                         android:id="@+id/LinearLayout_player1_text2"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="right"
                         android:orientation="vertical" >
@@ -585,14 +581,14 @@
                 android:background="@drawable/wards"
                 android:text=" " 
                 android:onClick="onClick"/>
+
              <Button
-                android:id="@+id/button_ok2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                
-                android:text="Next" 
-                android:onClick="onClick2"/>
+                 android:id="@+id/next_button"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0"
+                 android:onClick="next_Player"
+                 android:text="Next" />
 
             <FrameLayout
                 android:id="@+id/FrameLayout_centr"

@@ -17,6 +17,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 //import android.widget.LinearLayout;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -42,6 +43,8 @@ public class ArgoQRActivity extends Activity implements
 	Card CurrentCard;
 	private static final int ACTIVITY_SETTINGS_REQUEST = 0x252;
 	Deck deck;
+	
+	 Button next_but;
 
 	OnClickListener radioButtonClick = new OnClickListener() {
 		public void onClick(View v) {
@@ -221,6 +224,8 @@ public class ArgoQRActivity extends Activity implements
 		radio5.setOnClickListener(radioButtonClick);
 		radio6.setOnClickListener(radioButtonClick);
 		rb = radio1;
+		next_but = (Button) findViewById(R.id.next_button);
+		next_but.setClickable(false);
 
 	}
 
@@ -265,8 +270,8 @@ public class ArgoQRActivity extends Activity implements
 		scan();
 
 	}
-	public void onClick2(View view) {
-		game.set_next_player_curent();
+	public void next_Player(View view) {
+		game.set_next_player_curent();next_but.setClickable(false);
 		Toast.makeText(getApplicationContext(), "game "+game.getCurent_player().getName(), Toast.LENGTH_SHORT).show();
 
 	}
@@ -294,6 +299,7 @@ public class ArgoQRActivity extends Activity implements
 				if (CurrentCard != null)
 					CurrentCard.Action(game.getCurent_player(),
 							game.getN_curent_player());
+				next_but.setClickable(true);
 				/*
 				 * if (CurrentCard != null) { text = "id=" + CurrentCard.getId()
 				 * + " \nname=" + CurrentCard.getName() + " \npic=" +
