@@ -2,6 +2,7 @@ package com.fuze.argoqr;
 
 import android.content.Context;
 import android.widget.Toast;
+  
 
 public class Game {
 	private GamePlayer player1;
