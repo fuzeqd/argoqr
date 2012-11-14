@@ -44,8 +44,21 @@ public class Game {
 		}else{
 			set_curent_pl1();
 		}
+		cang_res();
 	}
-	
+	/**изменяем ресурсы при новом ходе для текущего игрока*/
+	private void cang_res(){
+		curent_player.chang(Resources_player.BEASTS,curent_player.getRes(Resources_player.BEASTS_MOD) );
+		curent_player.chang(Resources_player.BRICKS,curent_player.getRes(Resources_player.BRICKS_MOD) );
+		curent_player.chang(Resources_player.GEMS,curent_player.getRes(Resources_player.GEMS_MOD) );
+		
+		n_curent_player.chang(Resources_player.BEASTS, 0);
+		n_curent_player.chang(Resources_player.BRICKS, 0);
+		n_curent_player.chang(Resources_player.GEMS, 0);
+		n_curent_player.chang(Resources_player.BEASTS_MOD, 0);
+		n_curent_player.chang(Resources_player.BRICKS_MOD, 0);
+		n_curent_player.chang(Resources_player.GEMS_MOD, 0);
+	}
 	public GamePlayer getPlayer1() {
 		return player1;
 	}

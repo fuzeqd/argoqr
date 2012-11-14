@@ -67,7 +67,7 @@ public class Resources_player {
 	}
 	
 	/**очищаем изменения*/
-	/*public void Canged_clean(){
+	/**public void Canged_clean(){
 		change=0;
 		text_change.setText(" ");
 	}*/
