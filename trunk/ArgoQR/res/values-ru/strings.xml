@@ -5,4 +5,10 @@
     <string name="wall">С:</string>
     <string name="tower">Б:</string>
     <string name="app_deckdialog">deckdialog</string>
+    <string name="Game">Игра</string>
+    <string name="Setting">Настройки</string>
+    <string name="About">О игре</string>
+    <string name="Exit">Выход</string>
+    <string name="About_text">Тут типа описание и всё такое .Потом добавлю когда будет время   @fuze</string>
+    <string name="title_activity_about">О игре</string>
 </resources>
