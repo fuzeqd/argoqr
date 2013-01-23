@@ -5,6 +5,7 @@ import com.fuze.argoqr.R;
 import android.app.Activity;
 //import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 //import android.content.pm.ActivityInfo;
 import android.util.Log;
 import android.view.View.OnClickListener;
@@ -104,26 +105,43 @@ public class ArgoQRActivity extends Activity implements
 		seekBar = (SeekBar) findViewById(R.id.seek_bar);
 
 		seekBar.setOnSeekBarChangeListener(this);
+		
+		SharedPreferences setting=getSharedPreferences("fuze", 0);
+		
+		
 		game = new Game("player1", new TW(
 				// tower
 				(ImageView) findViewById(R.id.ImageView01),
 				(FrameLayout) findViewById(R.id.FrameLayout_tower1),
-				(TextView) findViewById(R.id.TextView01), 99, 100), new TW(
+				(TextView) findViewById(R.id.TextView01), 
+				setting.getInt("tower1", 99)
+				, 100), new TW(
 				// wall
 				(ImageView) findViewById(R.id.ImageView03),
 				(FrameLayout) findViewById(R.id.FrameLayout02),
-				(TextView) findViewById(R.id.TextView02), 99, 118), "player2",
+				(TextView) findViewById(R.id.TextView02), 
+				setting.getInt("wall1", 99)
+				, 118), "player2",
 				new TW(
 						// tower
 						(ImageView) findViewById(R.id.ImageView11),
 						(FrameLayout) findViewById(R.id.FrameLayout11),
-						(TextView) findViewById(R.id.TextView11), 99, 100),
+						(TextView) findViewById(R.id.TextView11), 
+						setting.getInt("tower2", 99)
+						, 100),
 				new TW(
 						// wall
 						(ImageView) findViewById(R.id.ImageView05),
 						(FrameLayout) findViewById(R.id.FrameLayout03),
-						(TextView) findViewById(R.id.TextView03), 99, 118));
+						(TextView) findViewById(R.id.TextView03), 
+						setting.getInt("wall2", 99)
+						, 118));
 
+		
+		
+		
+	//Log.d("setting read", "");
+	//Log.d("setting read BRICKS", ""+setting.getInt("Resources_player1.BRICKS",1));
 		game.getPlayer1().AddRes(
 				new Resources_player((TextView) findViewById(R.id.bricks_pl1),
 						(TextView) findViewById(R.id.bricks_ch_pl1)));// кирпичи
@@ -148,17 +166,17 @@ public class ArgoQRActivity extends Activity implements
 						(TextView) findViewById(R.id.beasts_mod_pl1),
 						(TextView) findViewById(R.id.beasts_mod_ch_pl1)));// Зверинец
 
-		game.getPlayer1().setRes(Resources_player.BRICKS, 1);
+		game.getPlayer1().setRes(Resources_player.BRICKS,setting.getInt("Resources_player1BRICKS",1));
 
-		game.getPlayer1().setRes(Resources_player.BRICKS_MOD, 1);
+		game.getPlayer1().setRes(Resources_player.BRICKS_MOD,setting.getInt("Resources_player1.BRICKS_MOD",1));
 
-		game.getPlayer1().setRes(Resources_player.GEMS, 1);
+		game.getPlayer1().setRes(Resources_player.GEMS, setting.getInt("Resources_player1.GEMS",1));
 
-		game.getPlayer1().setRes(Resources_player.GEMS_MOD, 1);
+		game.getPlayer1().setRes(Resources_player.GEMS_MOD,setting.getInt("Resources_player1.GEMS_MOD",1));
 
-		game.getPlayer1().setRes(Resources_player.BEASTS, 1);
+		game.getPlayer1().setRes(Resources_player.BEASTS, setting.getInt("Resources_player1.BEASTS",1));
 
-		game.getPlayer1().setRes(Resources_player.BEASTS_MOD, 1);
+		game.getPlayer1().setRes(Resources_player.BEASTS_MOD, setting.getInt("Resources_player1.BEASTS_MOD",1));
 
 		game.getPlayer2().AddRes(
 				new Resources_player((TextView) findViewById(R.id.bricks_pl2),
@@ -181,20 +199,21 @@ public class ArgoQRActivity extends Activity implements
 						(TextView) findViewById(R.id.beasts_ch_pl2)));// Существа
 		game.getPlayer2().AddRes(
 				new Resources_player(
-						(TextView) findViewById(R.id.beasts_mod_pl2),
+						(TextView)  findViewById(R.id.beasts_mod_pl2),
 						(TextView) findViewById(R.id.beasts_mod_ch_pl2)));// Зверинец
 
-		game.getPlayer2().setRes(Resources_player.BRICKS, 1);
 
-		game.getPlayer2().setRes(Resources_player.BRICKS_MOD, 1);
+		game.getPlayer2().setRes(Resources_player.BRICKS,setting.getInt("Resources_player2.BRICKS",1));
 
-		game.getPlayer2().setRes(Resources_player.GEMS, 1);
+		game.getPlayer2().setRes(Resources_player.BRICKS_MOD,setting.getInt("Resources_player2.BRICKS_MOD",1));
 
-		game.getPlayer2().setRes(Resources_player.GEMS_MOD, 1);
+		game.getPlayer2().setRes(Resources_player.GEMS, setting.getInt("Resources_player2.GEMS",1));
 
-		game.getPlayer2().setRes(Resources_player.BEASTS, 1);
+		game.getPlayer2().setRes(Resources_player.GEMS_MOD,setting.getInt("Resources_player2.GEMS_MOD",1));
 
-		game.getPlayer2().setRes(Resources_player.BEASTS_MOD, 1);
+		game.getPlayer2().setRes(Resources_player.BEASTS, setting.getInt("Resources_player2.BEASTS",1));
+
+		game.getPlayer2().setRes(Resources_player.BEASTS_MOD, setting.getInt("Resources_player2.BEASTS_MOD",1));
 		// resize_layout();
 		// beasts
 		/*
@@ -403,5 +422,59 @@ public class ArgoQRActivity extends Activity implements
 		// else continue with any other code you need in the method
 		// ...
 	}
+	void setting_w(){
+		//Log.d("setting_w ", "write");
+		SharedPreferences setting = getSharedPreferences("fuze", 0);
+		SharedPreferences.Editor editor= setting.edit();
+		//Log.d("tower1 ", " game.getPlayer1().getTower_val()");
+		editor.putInt("tower1", game.getPlayer1().getTower_val());
+		editor.putInt("tower2", game.getPlayer2().getTower_val());
+		editor.putInt("wall1", game.getPlayer1().getWall_val());
+		editor.putInt("wall2", game.getPlayer2().getWall_val());
+		
+		/*
+		 * 		game.getPlayer1().setRes(Resources_player.BRICKS,setting.getInt("Resources_player1.BRICKS",1));
+
+		game.getPlayer1().setRes(Resources_player.BRICKS_MOD,setting.getInt("Resources_player1.BRICKS_MOD",1));
+
+		game.getPlayer1().setRes(Resources_player.GEMS, setting.getInt("Resources_player1.GEMS",1));
+
+		game.getPlayer1().setRes(Resources_player.GEMS_MOD,setting.getInt("Resources_player1.GEMS_MOD",1));
+
+		game.getPlayer1().setRes(Resources_player.BEASTS, setting.getInt("Resources_player1.BEASTS",1));
+
+		game.getPlayer1().setRes(Resources_player.BEASTS_MOD, setting.getInt("Resources_player1.BEASTS_MOD",1));
+*/
+		
+		editor.putInt("Resources_player1BRICKS", game.getPlayer1().getRes(Resources_player.BRICKS)); 
+		editor.putInt("Resources_player1.BRICKS_MOD", game.getPlayer1().getRes(Resources_player.BRICKS_MOD)); 
+		editor.putInt("Resources_player1.GEMS", game.getPlayer1().getRes(Resources_player.GEMS)); 
+		editor.putInt("Resources_player1.GEMS_MOD", game.getPlayer1().getRes(Resources_player.GEMS_MOD)); 
+		editor.putInt("Resources_player1.BEASTS", game.getPlayer1().getRes(Resources_player.BEASTS)); 
+		editor.putInt("Resources_player1.BEASTS_MOD", game.getPlayer1().getRes(Resources_player.BEASTS_MOD)); 
+		Log.d("Resources_player1.BRICKS", " "+game.getPlayer1().getRes(Resources_player.BRICKS));
+		editor.putInt("Resources_player2.BRICKS", game.getPlayer2().getRes(Resources_player.BRICKS)); 
+		editor.putInt("Resources_player2.BRICKS_MOD", game.getPlayer2().getRes(Resources_player.BRICKS_MOD)); 
+		editor.putInt("Resources_player2.GEMS", game.getPlayer2().getRes(Resources_player.GEMS)); 
+		editor.putInt("Resources_player2.GEMS_MOD", game.getPlayer2().getRes(Resources_player.GEMS_MOD)); 
+		editor.putInt("Resources_player2.BEASTS", game.getPlayer2().getRes(Resources_player.BEASTS)); 
+		editor.putInt("Resources_player2.BEASTS_MOD", game.getPlayer2().getRes(Resources_player.BEASTS_MOD)); 
+		editor.commit();
+		
+	}
+	@Override
+	protected void onStop(){
+		setting_w();
+		super.onStop();	
+	}
+	
+    @Override
+    public void onBackPressed(){
+    	setting_w();
+    	super.onBackPressed();
+    	
+    }
+	
+	
 
 }
