@@ -11,21 +11,6 @@
         android:layout_height="wrap_content"
         android:gravity="fill_vertical"
         android:orientation="vertical" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="2" >
-
-            <SeekBar
-                android:id="@+id/seek_bar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:max="100" />
-
-        </LinearLayout>
 <!--ниже ресурсы  -->
 
         <LinearLayout
@@ -584,11 +569,19 @@
 
              <Button
                  android:id="@+id/next_button"
-                 android:layout_width="wrap_content"
+                 android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:layout_weight="0"
                  android:onClick="next_Player"
-                 android:text="Next" />
+                 android:text="@string/next_player" />
+
+             <Button
+                 android:id="@+id/sbros_"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0"
+                 android:onClick="sbros_"
+                 android:text="@string/sbros_" />
 
             <FrameLayout
                 android:id="@+id/FrameLayout_centr"
@@ -725,48 +718,6 @@
             </LinearLayout>
         </LinearLayout>
 </LinearLayout>
-
-        <RadioGroup
-            android:id="@+id/radioGroup1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-
-            <RadioButton
-                android:id="@+id/radio1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="1" />
-
-            <RadioButton
-                android:id="@+id/radio2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2" />
-
-            <RadioButton
-                android:id="@+id/radio3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3" />
-
-            <RadioButton
-                android:id="@+id/radio4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4" />
-            <RadioButton
-                android:id="@+id/radio5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5" />
-                        <RadioButton
-                android:id="@+id/radio6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6" />
-        </RadioGroup>
 
     </LinearLayout>
 
