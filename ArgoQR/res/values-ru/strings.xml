@@ -11,4 +11,7 @@
     <string name="Exit">Выход</string>
     <string name="About_text">Тут типа описание и всё такое .Потом добавлю когда будет время   @fuze</string>
     <string name="title_activity_about">О игре</string>
+    <string name="sbros_">Сброс</string>
+    <string name="next_player">Ход</string>
+    <string name="new_game">новая игра</string>
 </resources>
