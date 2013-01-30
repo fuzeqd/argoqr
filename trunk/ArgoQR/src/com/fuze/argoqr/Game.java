@@ -25,13 +25,13 @@ public class Game {
 		
 	}
 	
-	private void set_curent_pl1(){
+	public void set_curent_pl1(){
 		setCurent_player(player1);
 		setN_curent_player(player2);
 		player_flag=true;
 	}
 	
-	private void set_curent_pl2(){
+	public void set_curent_pl2(){
 		setCurent_player(player2);
 		setN_curent_player(player1);
 		player_flag=false;
